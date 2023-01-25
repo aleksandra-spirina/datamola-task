@@ -1,0 +1,340 @@
+:root {
+	--orange-color: #E7B192;
+	--blue-color: #A1CCCB;
+	--gray-color: #E1E1D9;
+	--main-font: 'Comfortaa', cursive;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+
+	font-family: var(--main-font);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+section {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav>ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	column-gap: 40px;
+}
+
+nav>ul>li {
+	display: inline-block;
+}
+
+#banner {
+	background: url(../../assets/images/background.jpg);
+	background-size: 100% auto;
+}
+
+#banner>#intro {
+	width: 400px;
+	margin: 40px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#portrait-container {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 10px solid #A1CCCB;
+
+	background: url('../../assets/images/portrait.png');
+	background-size: 300px 300px;
+
+	margin-bottom: 25px;
+}
+
+#banner h1 {
+	margin: 0;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+#banner h2 {
+	margin: 0;
+	font-size: 14px;
+}
+
+#banner .contacts-icons-wrapper {
+	display: flex;
+	column-gap: 5px;
+
+	margin: 25px 0;
+}
+
+#banner #download-button {
+	width: 180px;
+	height: 35px;
+	background-color: var(--orange-color);
+	border: none;
+	border-radius: 10px;
+
+	font-family: var(--main-font);
+}
+
+.section-title {
+	width: 100%;
+	margin: 40px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-title>hr {
+	width: 70%;
+	border: 3px solid var(--blue-color);
+	border-radius: 5px;
+
+	margin: 0;
+	margin-top: 15px;
+}
+
+.section-title>span {
+	font-size: 32px;
+}
+
+#about-content {
+	max-width: 85%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	margin-bottom: 100px;
+}
+
+.about-text-container {
+	width: 500px;
+	height: 250px;
+}
+
+#intro-inf {
+	border-right: 2px solid;
+	display: flex;
+	align-items: center;
+}
+
+#intro-inf>div {
+	margin-left: 40px;
+	margin-right: 50px;
+	text-align: justify;
+}
+
+#basic-inf {
+	display: flex;
+	flex-direction: row;
+}
+
+.inf-list {
+	list-style: none;
+	padding: 0;
+	min-height: 220px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#items-list {
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 50px;
+}
+
+#values-list {
+	font-size: 16px;
+	margin-left: 30px;
+}
+
+#skills-content {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+}
+
+.skill-card {
+	width: 340px;
+	height: 285px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+}
+
+.skill-card .skills-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.skill-card:nth-child(2) .description-container {
+	color: var(--blue-color);
+}
+
+.skill-card:nth-child(2) .progress-bar-indicator {
+	background-color: var(--blue-color);
+}
+
+.progress-bars-wrapper {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin: 0 20px;
+}
+
+.progress-bar-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.description-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	color: var(--orange-color);
+	font-size: 14px;
+}
+
+.progress-bar-background {
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+
+	background-color: var(--gray-color);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.progress-bar-indicator {
+	height: 100%;
+	border-radius: 5px;
+	background-color: var(--orange-color);
+}
+
+#education-content,
+#experience-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 100px;
+}
+
+.biography-card {
+	width: 85%;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	border: 1px solid var(--orange-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.biography-card .card-intro {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--orange-color);
+}
+
+.biography-card .card-time {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.biography-card .card-place {
+	text-align: center;
+}
+
+.biography-card .card-content h3 {
+	margin: 20px 0px 15px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.biography-card .card-content ul {
+	font-size: 14px;
+}
+
+.biography-card:nth-child(2) {
+	border: 1px solid var(--blue-color);
+}
+
+.biography-card:nth-child(2) .card-intro {
+	background-color: var(--blue-color);
+}
+
+#education-content #rs-school a {
+	text-decoration: underline;
+	text-decoration-color: var(--blue-color) ;
+}
+
+footer {
+	border-top: 2px solid var(--blue-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 0 25px 0;
+}
+
+#footer-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#footer-content h2 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#footer-content .contacts-icons-wrapper{
+	margin-bottom: 40px;
+}
+
+#footer-content a{
+	font-size: 14px;
+}
